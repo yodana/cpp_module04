@@ -5,10 +5,10 @@
 class Animal{
     public:
         Animal();
-        ~Animal(void);
+        virtual ~Animal(void);
         Animal(Animal const &src);
         Animal & operator=(Animal const & rhs);
-        virtual void makeSound() const;
+        virtual void makeSound() const = 0;
         std::string getType() const;
         void setType(std::string type);
 

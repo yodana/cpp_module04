@@ -2,7 +2,7 @@
 # define DOG_H
 #include <iostream>
 #include "Animal.hpp"
-
+#include "Brain.hpp"
 class Dog: public Animal{
     public:
         Dog();
@@ -13,6 +13,7 @@ class Dog: public Animal{
 
     private:
         std::string type;
+        Brain* _brain;
 };
 
 #endif

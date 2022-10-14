@@ -2,7 +2,7 @@
 # define CAT_H
 #include <iostream>
 #include "Animal.hpp"
-
+#include "Brain.hpp"
 class Cat: public Animal{
     public:
         Cat();
@@ -12,6 +12,7 @@ class Cat: public Animal{
         void makeSound() const;
     private:
         std::string type;
+        Brain* _brain;
 };
 
 #endif

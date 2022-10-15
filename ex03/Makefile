@@ -1,7 +1,7 @@
-NAME		=	Brain
+NAME		=	Interface
 
-SRC 		= 	main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
-HEADERS		=	Animal.hpp Dog.hpp Cat.hpp WrongAnimal.hpp WrongCat.hpp Brain.hpp
+SRC 		= 	AMateria.cpp Cure.cpp Ice.cpp main.cpp
+HEADERS		=	AMateria.hpp Cure.hpp Ice.hpp 
 
 SRC_FOLDER	=	srcs/
 BIN_FOLDER	=	bin

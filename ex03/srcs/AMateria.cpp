@@ -1,5 +1,7 @@
 #include <iostream>
 #include "../includes/AMateria.hpp"
+#include "../includes/Ice.hpp"
+#include "../includes/Cure.hpp"
 
 AMateria::AMateria(){
     std::cout << "Materia is alive!" << std::endl;
@@ -21,10 +23,6 @@ std::string const & AMateria::getType() const{
 
 AMateria::AMateria(AMateria const &src){
     *this = src;
-}
-
-AMateria* AMateria::clone(){
-    return *this;
 }
 
 //void AMaterial::use(ICharacter& target){

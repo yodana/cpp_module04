@@ -6,5 +6,6 @@
 int main( void ) {
     AMateria *a = new Ice();
     std::cout << a->getType() << std::endl;
+    
     return 0;
 }

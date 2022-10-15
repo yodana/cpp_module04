@@ -6,7 +6,8 @@
 #include <iostream>
 
 int main( void ) {
-    // instancier une fonction de la class Animal
-
+    // Animal *animal = new Animal() // NOT OK
+    Animal *animal = new Cat(); // OK
+    animal->makeSound();
     return 0;
 }

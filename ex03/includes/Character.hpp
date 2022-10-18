@@ -1,6 +1,7 @@
+#ifndef CHARACTER_H
+# define CHARACTER_H
 #include <iostream>
-#include "../includes/AMateria.hpp"
-#include "../includes/ICharacter.hpp"
+#include "ICharacter.hpp"
 
 class Character : public ICharacter
 {
@@ -10,12 +11,14 @@ class Character : public ICharacter
         Character(Character const &src);
         Character & operator=(Character const & rhs);
         ~Character();
-        std::string const & getName() const = 0;
-        void equip(AMateria* m) = 0;
-        void unequip(int idx) = 0;
-        void use(int idx, ICharacter& target) = 0;
+        std::string const & getName() const;
+        void equip(AMateria* m);
+        void unequip(int idx);
+        void use(int idx, ICharacter& target);
 
     private:
         std::string _name;
         AMateria* _inventory[4];
 };
+
+#endif 

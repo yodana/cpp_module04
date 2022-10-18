@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../includes/AMateria.hpp"
-#include "../includes/Ice.hpp"
 #include "../includes/Cure.hpp"
+#include "../includes/ICharacter.hpp"
 
 Cure::Cure(){
     this->_type = "cure"; 

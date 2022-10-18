@@ -1,7 +1,5 @@
 #include <iostream>
 #include "../includes/AMateria.hpp"
-#include "../includes/Ice.hpp"
-#include "../includes/Cure.hpp"
 
 AMateria::AMateria(){
     std::cout << "Materia is alive!" << std::endl;
@@ -25,11 +23,17 @@ AMateria::AMateria(AMateria const &src){
     *this = src;
 }
 
-//void AMaterial::use(ICharacter& target){
-//}
 
 AMateria& AMateria::operator=(AMateria const & rhs){
     if (this != &rhs){
     }
     return *this;
+}
+
+void AMateria::use(ICharacter& target){
+    if (this->getType() == "ice")
+        std::cout << "* shoots an ice bolt at " << target.getName() << " *" << std::endl;
+    else if (this->getType() == "cure")
+        std::cout << "* heals " << target.getName() << "’s wounds *" << std::endl;
+    return ;
 }

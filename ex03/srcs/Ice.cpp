@@ -5,12 +5,10 @@
 
 Ice::Ice(){
     this->_type = "ice"; 
-    std::cout << "Ice is alive!" << std::endl;
     return ;
 }
 
 Ice::~Ice(void){
-    std::cout << "Ice is dead!" << std::endl;
     return ;
 }
 

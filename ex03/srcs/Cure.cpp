@@ -5,12 +5,10 @@
 
 Cure::Cure(){
     this->_type = "cure"; 
-    std::cout << "Cure is alive!" << std::endl;
     return ;
 }
 
 Cure::~Cure(void){
-    std::cout << "Cure is dead!" << std::endl;
     return ;
 }
 

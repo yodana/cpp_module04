@@ -1,7 +1,7 @@
 NAME		=	Interface
 
-SRC 		= 	AMateria.cpp Cure.cpp Ice.cpp main.cpp Character.cpp
-HEADERS		=	AMateria.hpp Cure.hpp Ice.hpp ICharacter.hpp Character.hpp
+SRC 		= 	AMateria.cpp Cure.cpp Ice.cpp main.cpp Character.cpp MateriaSource.cpp
+HEADERS		=	AMateria.hpp Cure.hpp Ice.hpp ICharacter.hpp Character.hpp IMateriaSource.hpp MateriaSource.hpp
 
 SRC_FOLDER	=	srcs/
 BIN_FOLDER	=	bin

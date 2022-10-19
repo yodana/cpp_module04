@@ -2,12 +2,10 @@
 #include "../includes/AMateria.hpp"
 
 AMateria::AMateria(){
-    std::cout << "Materia is alive!" << std::endl;
     return ;
 }
 
 AMateria::~AMateria(void){
-    std::cout << "Materia is dead!" << std::endl;
     return ;
 }
 
